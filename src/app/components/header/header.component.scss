@@ -1,0 +1,44 @@
+.header {
+  background-color: black;
+  width: 100vw;
+  height: 7vh;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--item {
+      height: 100%;
+      position: relative;
+      text-align: center;
+    }
+
+    &--item:nth-child(4) {
+      grid-column: 5;
+    }
+
+    &--item a:hover {
+      color: #e8c300;
+      transition: width 0.3s ease-out;
+    }
+
+    &--item a::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      height: 0.2rem;
+      background-color: #e8c300;
+    }
+
+    &--item a:hover:after,
+    &--item a:focus:after {
+      width: 100%;
+    }
+  }
+}
