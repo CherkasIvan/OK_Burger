@@ -1,30 +1,28 @@
 <header class="header">
   <ul class="header__container">
-    <!-- <span>O&K Burger</span> -->
-    <!-- <img src="../../../assets/logo.jpg" alt="logo" class="logo" /> -->
 
-    <li class="header__container--item">
-      <a routerLink="about" class="header__container--about">о ресторане</a>
+    <li class="header__container--item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+      <a routerLink="/about-page" class="item-about">о ресторане</a>
     </li>
 
-    <li class="header__container--item">
-      <a routerLink="team" class="header__container--team">команда</a>
+    <li class="header__container--item" routerLinkActive="active">
+      <a routerLink="/team-page" class="item-team">команда</a>
     </li>
 
-    <li class="header__container--item">
-      <a routerLink="order" class="header__container--order">заказ</a>
+    <li class="header__container--item" routerLinkActive="active">
+      <a routerLink="/orders-page" class="item-order">заказ</a>
     </li>
 
-    <li class="header__container--item">
-      <a routerLink="menu" class="header__container--menu">меню</a>
+    <li class="header__container--item" routerLinkActive="active">
+      <a routerLink="/menu-page" class="item-menu">меню</a>
     </li>
 
-    <li class="header__container--item">
-      <a routerLink="events" class="header__container--events">мероприятия</a>
+    <li class="header__container--item" routerLinkActive="active">
+      <a routerLink="/events-page" class="item-events">мероприятия</a>
     </li>
 
-    <li class="header__container--item">
-      <a routerLink="contacts" class="header__container--contacts">контакты</a>
+    <li class="header__container--item" routerLinkActive="active">
+      <a routerLink="/contacts-page" class="item-contacts">контакты</a>
     </li>
   </ul>
 </header>
