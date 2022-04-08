@@ -1,8 +1,12 @@
 .social-media__item {
-  border: 0.1rem solid #ffffff;
-  opacity: 0.2;
+  position: relative;
+  min-width: 3.2rem;
+  min-height: 3.2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.2);
   padding: 0.6rem;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
   transition: 0.8s;
   z-index: 1000;
 }
@@ -10,6 +14,8 @@
 .social-media__item:hover a > *,
 .social-media__item:focus a > *,
 .social-media__item:active a > * {
+  width: 100%;
+  height: 100%;
   fill: #e8c300;
   transition: 0.8s;
 }
