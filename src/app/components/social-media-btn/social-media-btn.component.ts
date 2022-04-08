@@ -8,6 +8,7 @@ import { Component, Input} from '@angular/core';
 export class SocialMediaBtnComponent {
   @Input() btnClass: string = '';
   @Input() btnSvg: string = '';
+  @Input() btnSize: string = '';
 
   constructor() {}
 }
