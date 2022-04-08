@@ -5,16 +5,18 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 import { HeaderModule } from './components/header/header.module';
-
-import { AppComponent } from './app.component';
+import { SocialMediaBtnModule } from './components/social-media-btn/social-media-btn.module';
+import { FooterModule } from './components/footer/footer.module';
+import { WorkTimeBlockModule } from './components/work-time-block/work-time-block.module';
+import { CentralBlockModule } from './components/central-block/central-block.module';
 
 import { AboutPageModule } from './pages/about-page/about-page.module';
 import { ContactsPageModule } from './pages/contacts-page/contacts-page.module';
 import { OrdersPageModule } from './pages/orders-page/orders-page.module';
 import { MenuPageModule } from './pages/menu-page/menu-page.module';
 import { EventsPageModule } from './pages/events-page/events-page.module';
-import { SocialMediaBtnModule } from './components/social-media-btn/social-media-btn.module';
-import { CentralBlockModule } from './components/central-block/central-block.module';
+
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +24,9 @@ import { CentralBlockModule } from './components/central-block/central-block.mod
     AppRoutingModule,
     BrowserModule,
     RouterModule,
+    FooterModule,
     HeaderModule,
+    WorkTimeBlockModule,
     SocialMediaBtnModule,
     CentralBlockModule,
     AboutPageModule,
