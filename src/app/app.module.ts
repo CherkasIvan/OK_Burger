@@ -20,6 +20,24 @@ import { EventsPageModule } from './pages/events-page/events-page.module';
 
 import { AppComponent } from './app.component';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from 'firebase/app';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: 'AIzaSyDM6AqXf-wsBQ_YBy90PPBRA7giOahUow0',
+  authDomain: 'ok-burger.firebaseapp.com',
+  projectId: 'ok-burger',
+  storageBucket: 'ok-burger.appspot.com',
+  messagingSenderId: '355621971833',
+  appId: '1:355621971833:web:1533868a45ffb18258f1a8',
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
