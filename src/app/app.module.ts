@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+
 import { AppRoutingModule } from './app-routing.module';
 
 import { HeaderModule } from './components/header/header.module';
@@ -20,23 +24,8 @@ import { EventsPageModule } from './pages/events-page/events-page.module';
 
 import { AppComponent } from './app.component';
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: 'AIzaSyDM6AqXf-wsBQ_YBy90PPBRA7giOahUow0',
-  authDomain: 'ok-burger.firebaseapp.com',
-  projectId: 'ok-burger',
-  storageBucket: 'ok-burger.appspot.com',
-  messagingSenderId: '355621971833',
-  appId: '1:355621971833:web:1533868a45ffb18258f1a8',
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+import { environment } from '../environments/environment';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [AppComponent],
@@ -57,8 +46,11 @@ const app = initializeApp(firebaseConfig);
     MenuPageModule,
     EventsPageModule,
     ContactsPageModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    StoreModule.forRoot({}, {}),
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
