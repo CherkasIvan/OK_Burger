@@ -9,6 +9,8 @@ import { SocialMediaBtnModule } from './components/social-media-btn/social-media
 import { FooterModule } from './components/footer/footer.module';
 import { WorkTimeBlockModule } from './components/work-time-block/work-time-block.module';
 import { CentralBlockModule } from './components/central-block/central-block.module';
+import { LineModule } from './components/line/line.module';
+import { CircleModule } from './components/circle/circle.module';
 
 import { AboutPageModule } from './pages/about-page/about-page.module';
 import { ContactsPageModule } from './pages/contacts-page/contacts-page.module';
@@ -26,6 +28,8 @@ import { AppComponent } from './app.component';
     RouterModule,
     FooterModule,
     HeaderModule,
+    LineModule,
+    CircleModule,
     WorkTimeBlockModule,
     SocialMediaBtnModule,
     CentralBlockModule,
