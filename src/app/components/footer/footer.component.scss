@@ -1,0 +1,20 @@
+.footer {
+  position: fixed;
+  background: black;
+  width: 100vw;
+  height: 3rem;
+  bottom: 0;
+  
+  &__container {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    color: #ffffff;
+    display: grid;
+
+    .footer__content {
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}

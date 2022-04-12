@@ -1,7 +1,9 @@
 .header {
-  background-color: black;
+  position: fixed;
+  background-color: inherit;
   width: 100vw;
   height: 7vh;
+  z-index: 100;
 
   &__container {
     display: grid;
@@ -20,10 +22,14 @@
     &--item > * {
       align-self: center;
       justify-self: center;
+      transition: 0.8s;
     }
 
-    &--item:hover > * {
+    &--item:hover > *,
+    &--item:focus > *,
+    &--item:active > * {
       color: #e8c300;
+      transition: 0.8s;
     }
 
     &--item:nth-child(4) {
@@ -40,7 +46,8 @@
     }
 
     &--item:hover:after,
-    &--item:focus:after {
+    &--item:focus:after,
+    &--item:active:after {
       width: 100%;
     }
   }
