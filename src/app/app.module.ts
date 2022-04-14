@@ -2,6 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
+import { StoreModule } from '@ngrx/store';
+
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+
 import { AppRoutingModule } from './app-routing.module';
 
 import { HeaderModule } from './components/header/header.module';
@@ -19,6 +25,12 @@ import { MenuPageModule } from './pages/menu-page/menu-page.module';
 import { EventsPageModule } from './pages/events-page/events-page.module';
 
 import { AppComponent } from './app.component';
+
+import { environment } from '../environments/environment';
+import { reducers, metaReducers } from './reducers';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
+import { AppEffects } from './app.effects';
 
 @NgModule({
   declarations: [AppComponent],
@@ -39,8 +51,15 @@ import { AppComponent } from './app.component';
     MenuPageModule,
     EventsPageModule,
     ContactsPageModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    }),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
+    EffectsModule.forRoot([AppEffects]),
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
