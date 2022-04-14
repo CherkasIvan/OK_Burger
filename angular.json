@@ -33,6 +33,11 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                  "src/app/stylings"
+              ]
+          },
             "scripts": []
           },
           "configurations": {

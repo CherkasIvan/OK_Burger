@@ -1,5 +1,7 @@
+@import '_constants';
+
 .circle {
   padding: 5rem;
-  border: 1rem solid #e8c300;
+  border: 1rem solid $corporate-color;
   border-radius: 50%;
 }
