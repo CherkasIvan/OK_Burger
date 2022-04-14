@@ -1,9 +1,11 @@
+@import "_constants";
+
 .central-block {
   display: grid;
-  grid-template-rows: .2fr .5fr .1fr .5fr .7fr;
+  grid-template-rows: 0.2fr 0.5fr 0.1fr 0.5fr 0.7fr;
   height: 100%;
   width: 100%;
-  color: white;
+  color: $main-color-text;
   text-transform: uppercase;
   align-items: center;
 
@@ -36,17 +38,17 @@
       font-size: 0.9rem;
       font-weight: bold;
       padding: 1rem 2rem;
-      color: #ffffff;
+      color: $main-color-text;
       background: none;
-      border: 1px solid #ffffff;
+      border: 1px solid $main-color-text;
       border-radius: 0.5rem;
       text-transform: uppercase;
       transition: 0.8s;
     }
 
     &__btn:hover {
-      color: #ffffff;
-      background: #e8c300;
+      color: $main-color-text;
+      background: $corporate-color;
       transition: 0.8s;
     }
   }
@@ -59,6 +61,6 @@
   &__name {
     font-family: "Kurale", serif;
     font-size: 4rem;
-    color: #e8c300;
+    color: $corporate-color;
   }
 }

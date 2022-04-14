@@ -1,15 +1,17 @@
+@import '_constants';
+
 .footer {
   position: fixed;
-  background: black;
+  background: $main-color-bg;
   width: 100vw;
   height: 3rem;
   bottom: 0;
-  
+
   &__container {
     margin: 0 auto;
     width: 80%;
     height: 100%;
-    color: #ffffff;
+    color: $main-color-text;
     display: grid;
 
     .footer__content {

@@ -1,5 +1,7 @@
+@import "_constants";
+
 .work-time {
-  color: #ffffff;
-  writing-mode:vertical-lr;
+  color: $main-color-text;
+  writing-mode: vertical-lr;
   transform: rotate(180deg);
 }

@@ -1,3 +1,5 @@
+@import '_constants';
+
 .social-media__item {
   width: 3.2rem;
   height: 3.2rem;
@@ -13,7 +15,7 @@
 .social-media__item:hover a > *,
 .social-media__item:focus a > *,
 .social-media__item:active a > * {
-  fill: #e8c300;
+  fill: $corporate-color;
   transition: 0.8s;
 }
 
@@ -21,6 +23,6 @@
 .social-media__item:focus,
 .social-media__item:active {
   opacity: 1;
-  border-color: #e8c300;
+  border-color: $corporate-color;
   transition: 0.8s;
 }
