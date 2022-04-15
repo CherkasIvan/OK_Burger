@@ -1,7 +1,10 @@
 <header class="header">
-  <ul class="header__container">
-
-    <li class="header__container--item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+  <ul class="header__container" id="mediaHeader">
+    <li
+      class="header__container--item"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <a routerLink="/about" class="item-about">о ресторане</a>
     </li>
 
@@ -25,4 +28,16 @@
       <a routerLink="/contacts" class="item-contacts">контакты</a>
     </li>
   </ul>
+  
+
+  <!-- <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> -->
+  <!-- <app-burger-menu></app-burger-menu> -->
 </header>
