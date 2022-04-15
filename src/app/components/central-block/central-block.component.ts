@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { SocialBtnInterface } from 'interfaces/socialBtn.interface';
 
-import { SocialMediaBtnService } from '../../service/social-media-btn/social-media-btn.service';
+import { SocialMediaBtnService } from 'service/social-media-btn/social-media-btn.service';
 
 @Component({
   selector: 'app-central-block',

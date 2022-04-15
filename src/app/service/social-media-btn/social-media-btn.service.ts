@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { SocialBtnInterface } from '../../interfaces/socialBtn.interface';
+import { SocialBtnInterface } from 'interfaces/socialBtn.interface';
 
 @Injectable({
   providedIn: 'root',
