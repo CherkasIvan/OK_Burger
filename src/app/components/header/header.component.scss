@@ -1,3 +1,5 @@
+@import "_constants";
+
 .header {
   position: fixed;
   background-color: inherit;
@@ -28,7 +30,7 @@
     &--item:hover > *,
     &--item:focus > *,
     &--item:active > * {
-      color: #e8c300;
+      color: $corporate-color;
       transition: 0.8s;
     }
 
@@ -42,7 +44,7 @@
       left: 0;
       bottom: 0;
       height: 0.2rem;
-      background-color: #e8c300;
+      background-color: $corporate-color;
     }
 
     &--item:hover:after,
