@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class VideoComponent implements OnInit {
   @Input() videoID: string = '';
   @Input() videoPath: string = '';
+  @Input() videoMute: boolean = true;
 
   constructor() {}
 
