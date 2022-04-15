@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { VideoInterface } from '../../interfaces/video.interface';
+
+import { VideoInterface } from 'interfaces/video.interface';
 
 @Injectable({
   providedIn: 'root'
