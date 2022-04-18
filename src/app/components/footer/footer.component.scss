@@ -1,18 +1,15 @@
-@import '_constants';
+@import "_constants";
+@import "_global-class";
 
 .footer {
   position: fixed;
   background: $main-color-bg;
-  width: 100vw;
+  min-width: 100%;
   height: 3rem;
   bottom: 0;
 
   &__container {
-    margin: 0 auto;
-    width: 80%;
-    height: 100%;
     color: $main-color-text;
-    display: grid;
 
     .footer__content {
       align-self: center;

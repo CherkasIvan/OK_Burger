@@ -1,14 +1,29 @@
-import { Component, Input} from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  OnInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-social-media-btn',
   templateUrl: './social-media-btn.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./social-media-btn.component.scss'],
 })
-export class SocialMediaBtnComponent {
+export class SocialMediaBtnComponent implements OnInit {
   @Input() btnClass: string = '';
   @Input() btnSvg: string = '';
   @Input() btnSize: string = '';
+  public vol: boolean = false;
 
+  public changeVol(): boolean {
+    this.vol = !this.vol;
+    return this.vol;
+  }
   constructor() {}
+
+  ngOnInit(): void {
+    this.changeVol();
+  }
 }

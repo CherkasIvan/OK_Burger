@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: $main-color-bg;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: $main-color-text;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
