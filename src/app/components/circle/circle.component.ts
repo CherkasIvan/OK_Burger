@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-circle',
   templateUrl: './circle.component.html',
-  styleUrls: ['./circle.component.scss']
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrls: ['./circle.component.scss'],
 })
-export class CircleComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class CircleComponent {
+  constructor() {}
 }
