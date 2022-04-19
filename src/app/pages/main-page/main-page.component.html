@@ -1,0 +1,16 @@
+<app-video [videoID]="videoElement[0].id" [videoPath]="videoElement[0].path"></app-video>
+
+<main class="main-page">
+  <div class="page__container">
+    <app-work-time-block class="work-time"></app-work-time-block>
+    <app-central-block class="central-block"></app-central-block>
+    <ul class="social-media">
+      <app-social-media-btn
+        *ngFor="let k of btnObject | slice: 0:3"
+        [btnClass]="k.class"
+        [btnSvg]="k.path"
+        [btnSize]="k.size"
+      ></app-social-media-btn>
+    </ul>
+  </div>
+</main>
