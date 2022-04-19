@@ -1,0 +1,10 @@
+@import "_global-class";
+@import "_mixins";
+
+:host {
+  display: block;
+}
+
+.page__container {
+  @include three-r-c;
+}

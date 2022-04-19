@@ -1,0 +1,19 @@
+@import "_global-class";
+@import "_mixins";
+
+:host {
+  display: block;
+}
+
+.team-page {
+  height: 100vh;
+  width: 100vw;
+  background: url(../../../assets/stuff__bg.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  .page__container {
+    @include one-r-two-c;
+  }
+}

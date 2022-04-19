@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-work-time-block',
   templateUrl: './work-time-block.component.html',
-  styleUrls: ['./work-time-block.component.scss']
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrls: ['./work-time-block.component.scss'],
 })
-export class WorkTimeBlockComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class WorkTimeBlockComponent {
+  constructor() {}
 }

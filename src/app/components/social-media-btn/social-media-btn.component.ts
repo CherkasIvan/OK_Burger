@@ -1,9 +1,14 @@
-import { ChangeDetectionStrategy } from '@angular/compiler';
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  OnInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-social-media-btn',
   templateUrl: './social-media-btn.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./social-media-btn.component.scss'],
 })
 export class SocialMediaBtnComponent implements OnInit {
