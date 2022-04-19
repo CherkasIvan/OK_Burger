@@ -26,7 +26,7 @@
         text-align: center;
         font-weight: bold;
         font-family: "Kurale", serif;
-        font-size: 2.5rem;
+        font-size: calc(1rem + 16 * (100vw / 1280));
       }
 
       &__text {

@@ -1,5 +1,9 @@
 @media (max-width: 900px) {
-  #mediaHeader {
-    display: none;
+  .main-page {
+    .social-media {
+      grid-column: 2;
+      grid-row: 4;
+      z-index: 5;
+    }
   }
 }
