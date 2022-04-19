@@ -17,6 +17,8 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { PreloadStrategyService } from 'service/preload-strategy/preload-strategy.service';
+
 import { HeaderModule } from 'components/header/header.module';
 import { SocialMediaBtnModule } from 'components/social-media-btn/social-media-btn.module';
 import { FooterModule } from 'components/footer/footer.module';
@@ -26,6 +28,7 @@ import { CentralBlockModule } from 'components/central-block/central-block.modul
 import { BurgerMenuModule } from 'components/burger-menu/burger-menu.module';
 import { LineModule } from 'components/line/line.module';
 import { CircleModule } from 'components/circle/circle.module';
+import { YandexMapModule } from 'components/yandex-map/yandex-map.module';
 
 import { AboutPageModule } from 'pages/about-page/about-page.module';
 import { ContactsPageModule } from 'pages/contacts-page/contacts-page.module';
@@ -50,6 +53,7 @@ import { environment } from 'environments/environment';
     CircleModule,
     BurgerMenuModule,
     WorkTimeBlockModule,
+    YandexMapModule,
     SocialMediaBtnModule,
     CentralBlockModule,
     AboutPageModule,
@@ -70,7 +74,7 @@ import { environment } from 'environments/environment';
     }),
     EffectsModule.forRoot([AppEffects]),
   ],
-  providers: [AngularFirestore],
+  providers: [AngularFirestore, PreloadStrategyService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
