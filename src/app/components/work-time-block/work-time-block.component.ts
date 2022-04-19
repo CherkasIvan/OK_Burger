@@ -6,8 +6,6 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./work-time-block.component.scss'],
 })
-export class WorkTimeBlockComponent implements OnInit {
+export class WorkTimeBlockComponent {
   constructor() {}
-
-  ngOnInit(): void {}
 }

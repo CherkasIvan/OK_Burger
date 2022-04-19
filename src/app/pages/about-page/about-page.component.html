@@ -1,0 +1,51 @@
+<div class="about-page">
+  <div class="page__container">
+    <div class="content-block">
+      <span class="content-block__title">о ресторане</span>
+      <app-line></app-line>
+      <!-- <div class="content-block__line"></div> -->
+      <div class="content-block__text">
+        <p class="content-block__text--item">
+          Волшебная атмосфера, безукоризненное обслуживание, изысканный интерьер
+          и, самое главное, богатейший выбор вкуснейших блюд отменного качества
+          – именно эти характеристики привлекают гостей в наш ресторан
+        </p>
+        <p class="content-block__text--item">
+          Официанты этого заведения знают все тонкости приготовления блюд, они
+          подскажут гостям наиболее подходящие для них яства. Тут хорошо знают
+          постоянных клиентов, умело угождая их вкусам.
+        </p>
+        <p class="content-block__text--item">
+          Идеально дополняет ресторан уютная кофейня, находящаяся на первом
+          этаже. Чашечка изумительного кофе и сладости от местного кондитера
+          зарядят вас бодростью и позитивной энергией.
+        </p>
+      </div>
+
+      <!-- <div>
+        <button (click)="increase()">+1</button>
+        <button (click)="decrease()" [disabled]="cannotDecrease$ | async">
+          -1
+        </button>
+        <button (click)="clear()" [disabled]="cannotDecrease$ | async">
+          Clear
+        </button>
+        <div>
+          <span
+            >Counter is: {{ count$ | async }}
+            <span *ngIf="updatedAt$ | async">
+              Updated at
+              {{ updatedAt$ | async | date: "YYYY MM dd hh:mm:ss" }}</span
+            ></span
+          >
+        </div>
+      </div> -->
+    </div>
+    <div class="modificator">
+      <div class="picture-block">
+        <img src="../../../assets/burger__about.jpg" alt="burger__about" />
+      </div>
+      <app-circle class="circle"></app-circle>
+    </div>
+  </div>
+</div>

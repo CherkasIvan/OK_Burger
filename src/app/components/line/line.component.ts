@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-line',
@@ -6,8 +6,6 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./line.component.scss'],
 })
-export class LineComponent implements OnInit {
+export class LineComponent {
   constructor() {}
-
-  ngOnInit(): void {}
 }

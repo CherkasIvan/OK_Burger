@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AnimationDataEnum } from 'constants/animations/animation-data-enum';
+import { PreloadStrategyService } from './service/preload-strategy/preload-strategy.service';
 
 const routes: Routes = [
   {
@@ -10,7 +11,7 @@ const routes: Routes = [
       import('./pages/main-page/main-page.module').then(
         (m) => m.MainPageModule
       ),
-    data: { animation: [AnimationDataEnum.mainPage] },
+    data: { animation: [AnimationDataEnum.mainPage], preload: true },
   },
   {
     path: 'about',
@@ -58,7 +59,7 @@ const routes: Routes = [
       import('./pages/contacts-page/contacts-page.module').then(
         (m) => m.ContactsPageModule
       ),
-    data: { animation: [AnimationDataEnum.contactsPage] },
+    data: { animation: [AnimationDataEnum.contactsPage], preload: true },
   },
   {
     path: 'main',
@@ -66,7 +67,7 @@ const routes: Routes = [
       import('./pages/main-page/main-page.module').then(
         (m) => m.MainPageModule
       ),
-    data: { animation: [AnimationDataEnum.mainPage] },
+    data: { animation: [AnimationDataEnum.mainPage], preload: true },
   },
 ];
 
@@ -74,6 +75,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {
       initialNavigation: 'enabledBlocking',
+      preloadingStrategy: PreloadStrategyService,
     }),
   ],
   exports: [RouterModule],

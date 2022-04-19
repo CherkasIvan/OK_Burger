@@ -1,0 +1,67 @@
+@import "_global-class";
+@import "_mixins";
+@import "_constants";
+
+:host {
+  display: block;
+}
+
+.about-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .page__container {
+    @include one-r-two-c;
+
+    .content-block {
+      display: grid;
+      align-items: center;
+      grid-template-rows: 0.1fr 0.1fr 0.4fr;
+      color: $main-color-text;
+
+      &__title {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Kurale", serif;
+        font-size: calc(1rem + 16 * (100vw / 1280));
+      }
+
+      &__text {
+        display: grid;
+        gap: 0.7rem;
+        align-items: flex-start;
+        justify-self: flex-start;
+        text-align: center;
+
+        &--item:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+    .modificator {
+      position: relative;
+
+      .picture-block {
+        overflow: hidden;
+        min-width: 35rem;
+        max-width: 40rem;
+        align-self: center;
+        justify-self: center;
+        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+
+        img {
+          vertical-align: middle;
+        }
+      }
+
+      .circle {
+        position: absolute;
+        top: 35%;
+        right: -15%;
+      }
+    }
+  }
+}
