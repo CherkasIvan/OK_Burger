@@ -1,6 +1,13 @@
 @media (max-width: 900px) {
-  .main-page {
-    .social-media {
+  .page__container {
+    #central-block {
+      grid-row-start: 1;
+    }
+
+    #social-media {
+      display: flex;
+      justify-content: space-around;
+      margin-top: calc(2rem + 16 * (100vw / 1280));
       grid-column: 2;
       grid-row: 4;
       z-index: 5;

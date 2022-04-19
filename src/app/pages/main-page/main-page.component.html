@@ -3,8 +3,8 @@
 <main class="main-page">
   <div class="page__container">
     <app-work-time-block class="work-time"></app-work-time-block>
-    <app-central-block class="central-block"></app-central-block>
-    <ul class="social-media">
+    <app-central-block class="central-block" id="central-block"></app-central-block>
+    <ul class="social-media" id="social-media">
       <app-social-media-btn
         *ngFor="let k of btnObject | slice: 0:3"
         [btnClass]="k.class"
