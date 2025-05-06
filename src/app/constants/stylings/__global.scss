@@ -12,6 +12,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+a,
+span,
+p {
+  font-size: calc(0.4rem + 10 * (100vw / 1280));
+}
+
 a {
   color: $main-color-text;
   font-weight: bold;

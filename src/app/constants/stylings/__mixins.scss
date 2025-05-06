@@ -1,6 +1,6 @@
 @mixin three-r-c {
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.3fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
 }
 
 @mixin one-r-two-c {
