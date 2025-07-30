@@ -3,21 +3,21 @@ import {
   ChangeDetectionStrategy,
   Component,
   ViewChild,
-} from "@angular/core";
-import { VideoInterface } from "interfaces/video.interface";
-import { VideoComponent } from "components/video/video.component";
+} from '@angular/core';
+import { VideoInterface } from 'interfaces/video.interface';
+import { VideoComponent } from 'components/video/video.component';
 
-import { SocialBtnInterface } from "interfaces/socialBtn.interface";
+import { SocialBtnInterface } from 'interfaces/socialBtn.interface';
 
-import { SocialMediaBtnService } from "service/social-media-btn/social-media-btn.service";
-import { VideoService } from "service/video/video.service";
+import { SocialMediaBtnService } from 'service/social-media-btn/social-media-btn.service';
+import { VideoService } from 'service/video/video.service';
 
-import { slideInAnimation } from "constants/animations/routing-animations";
+import { slideInAnimation } from 'constants/animations/routing-animations';
 
 @Component({
-  selector: "app-main-page",
-  templateUrl: "./main-page.component.html",
-  styleUrls: ["./main-page.component.scss"],
+  selector: 'app-main-page',
+  templateUrl: './main-page.component.html',
+  styleUrls: ['./main-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [slideInAnimation],
 })
