@@ -17,10 +17,9 @@
   .page__container {
     @include three-r-c;
 
-    .yandex-map {
+    app-yandex-map {
       grid-column: 2;
       grid-row: 2;
-      border: 4px solid $corporate-color;
       z-index: 10;
     }
   }

@@ -35,9 +35,9 @@
     justify-self: center;
 
     &__btn {
-      font-size: 0.9rem;
+      font-size: calc(8px + 8 * (100vw / 1440));
       font-weight: bold;
-      padding: 1rem 2rem;
+      padding: 0.5rem 1rem;
       color: $main-color-text;
       background: none;
       border: 1px solid $main-color-text;
@@ -55,12 +55,12 @@
 
   &__restaurant {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: calc(0.8rem + 16 * (100vw / 1280));
   }
 
   &__name {
     font-family: "Kurale", serif;
-    font-size: 4rem;
+    font-size: calc(2rem + 16 * (100vw / 1280));
     color: $corporate-color;
   }
 }
